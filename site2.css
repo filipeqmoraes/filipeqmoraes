@@ -1,0 +1,251 @@
+
+body {
+    margin: 0; 
+}
+.tudo{
+    display: grid;
+    background-color: rgb(128, 128, 128);
+    
+}
+.body{
+    grid-area: 1 / 1 / 2 / 2;
+    
+}
+.fundo{
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    justify-content: center;
+}
+
+.fundo img {
+    
+    object-fit: contain;
+    max-height: 100vh;
+}
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(221, 221, 221, 0.9);
+    padding: 3rem;
+    
+}
+
+.retrato{
+    display: flex;
+    justify-content: end;
+    margin-right: 6rem;
+    margin-left: 6rem;
+    
+}
+.quadro{
+    border-radius: 10%;
+    border: solid rgb(150, 150, 150) 1px ;
+    
+    
+}
+h1{
+    color: white;
+    font-family: Ibarra real nova;
+    font-size:50px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    
+}
+.filmaker{
+    color: rgb(117, 117, 117);
+    font-family: Ibarra real nova;
+    font-size:30px;
+    margin-block-start: 0;
+    margin-block-end: 0;  
+    
+}
+@media (max-width: 676px) {
+   
+    .hero{
+        display: flex;
+        flex-direction: column;
+    }
+   
+    .nome{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .filmaker{
+        align-self: center;
+        font-size: 25px !important; 
+    }
+    .nome h1{
+        font-size: 35px;
+        
+
+    }
+    
+    
+}
+
+.features{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(148, 146, 146, 0.9);
+    margin: 0;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 2%;
+    padding-bottom: 2rem;
+    
+
+}
+.description{
+    color: white;
+    font-family: Noto Sans Display;
+    max-width: 700px;
+    text-align: justify;
+    
+}
+
+@media (max-width: 676px) {
+    .features {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+    .tit h2{
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+}
+
+.jobs{
+    
+    background-color: rgb(243, 243, 243, 0);
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  0.2fr 2fr;
+    padding-bottom: 3rem;
+    gap: 20px;
+    
+    
+}
+
+.tit{ 
+    
+    color: rgb(54, 54, 54);
+    font-family: Noto Sans Display;
+    margin: 0;
+    grid-area: 1 / 1 / 2 / 4;
+    text-align: center;
+    
+   
+  
+    
+}
+.tumb{
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+}
+h2{
+    font-family: Ibarra real nova;
+    color: rgb(202, 202, 202);
+}
+
+li{
+    font-family: Noto Sans Display;
+    color: rgb(202, 202, 202);
+}
+.tit h2 {
+    margin-block-end: 0;
+    margin-block-start: 2.5rem;
+    color: rgb(54, 54, 54);
+    font-family: Noto Sans Display ;
+}
+
+.contain{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 880px) {
+    .jobs {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        margin-block-end: 50px;
+        
+    }
+}
+.tumb p {
+    
+    margin-block-start:0;
+    font-family: Noto Sans Display ;
+    font-size: 17px;
+    color: rgb(54, 54, 54);
+    text-align: center;
+}
+a {
+    text-decoration: none
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+    
+}
+
+.menu p {
+    color: rgb(204, 204, 204);
+    margin-top: 23px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: Noto Sans Display;
+    
+}
+
+.mcon {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(20, 20, 20);
+    margin-block-start: 0;
+    margin-block-end: 0;
+    height: 20vh;
+    
+}
+
+
+.curric {
+    padding: 10px;
+    max-width: 1000px;
+}
+
+.contcur{
+    display: flex;
+    justify-content: center;
+}
+ul{
+    padding-inline-start: 25px;
+}
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: black;
+    gap: 5px;
+}
+ .galeria img{
+    height: 200px;
+ }
+ .icones{
+    height: 30px;
+    margin: 20px;
+ }
